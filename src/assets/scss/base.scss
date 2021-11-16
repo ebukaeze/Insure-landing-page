@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./main";
+@import "./navbar";
+@import "./product";
+@import "./footer";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $first-color;
+  font-size: $body-font;
+  font-family: $first-font;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.line {
+  display: flex;
+  width: 100px;
+  height: 2px;
+  background-color: $first-color-alt;
+  margin-bottom: 2rem;
+}
+
+.bg::before {
+  display: flex;
+  content: "";
+  z-index: 1;
+  width: 442px;
+  height: 520px;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  top: 50px;
+  right: 0;
+  margin: 0;
+  background: url("../images/bg-pattern-intro-right-desktop.svg");
+  transform: scale(0.9);
+
+  overflow: hidden;
+}
+.bg::after {
+  display: flex;
+  content: "";
+  z-index: 1;
+  width: 195px;
+  height: 500px;
+  position: absolute;
+  top: 330px;
+  left: 0;
+  margin: 0;
+  background: url("../images/bg-pattern-intro-left-desktop.svg");
+  transform: scale(0.9);
+
+  overflow: hidden;
+}
+.header {
+  height: 750px;
+  background: #fff;
+}

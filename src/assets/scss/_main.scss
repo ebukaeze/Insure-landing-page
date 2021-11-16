@@ -1,0 +1,64 @@
+.main {
+  width: 100%;
+  height: 500px;
+  background-color: $first-color;
+  .main-container {
+    .main-content {
+      display: flex;
+      //align-items: center;
+      justify-content: space-between;
+
+      .intro {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        margin-top: 2.5rem;
+
+        .intro-header {
+          color: #fff;
+          font-weight: 700;
+          font-size: 48px;
+          margin: 2rem 0;
+          font-family: $first-font;
+        }
+        .desc {
+          color: $first-color-alt;
+        }
+        .plan-btn {
+          display: block;
+          color: #fff;
+          width: max-content;
+          height: max-content;
+          padding: 8px 22px;
+          background-color: transparent;
+          border: 0.5px solid #fff;
+          outline-style: inset;
+          outline-width: 0.5px;
+          margin-top: 1.5rem;
+          cursor: pointer;
+          font-weight: 500;
+          transition: 0.2s ease;
+
+          &:hover {
+            background: $very-light-gray;
+            color: $very-dark-violet;
+          }
+        }
+      }
+
+      .img-container {
+        display: flex;
+        margin-left: 1rem;
+        padding-top: 2.5rem;
+        //position: absolute;
+
+        img {
+          width: 390px;
+          height: 500px;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+    }
+  }
+}

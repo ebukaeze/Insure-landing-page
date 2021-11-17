@@ -3,7 +3,7 @@ import family from '../assets/images/image-intro-desktop.jpg';
 
 const Main = () => {
     return (
-        <main className="main bg">
+        <div className="main bg">
             <div className="main-container container">
               <div className="main-content grid">
                   <div className="intro">
@@ -22,7 +22,7 @@ const Main = () => {
 
             </div>
             
-        </main>
+        </div>
     )
 }
 

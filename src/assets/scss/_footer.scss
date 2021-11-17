@@ -13,6 +13,10 @@
     position: absolute;
     left: 0;
     //transform: scale(0.9);
+    @media screen and (max-width: 750px) {
+      background: url("../images/bg-pattern-footer-mobile.svg") no-repeat;
+      width: 100%;
+    }
   }
   .footer-container {
     .footer-content {
@@ -39,6 +43,14 @@
                 //background-color: $first-color;
                 fill: $first-color;
               }
+
+              img {
+                svg {
+                  &:hover {
+                    fill: $first-color;
+                  }
+                }
+              }
             }
           }
         }
@@ -64,7 +76,7 @@
             a {
               text-decoration: none;
               color: $first-color;
-              font-weight: 500;
+              font-weight: 600;
               font-size: 15px;
               text-transform: uppercase;
 
@@ -78,6 +90,65 @@
             color: $dark-grayis-violet;
             text-transform: uppercase;
             font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer {
+    height: max-content;
+    width: 100%;
+
+    .footer-container {
+      width: 100%;
+
+      .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .footer-header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .social-container {
+            display: flex;
+            align-items: center;
+            .soc {
+              margin-left: -63px;
+              margin-top: 1.5rem;
+              .soc-items {
+                transform: scale(0.9);
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+        .footer-links {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: -40px;
+
+          ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            li {
+              a {
+              }
+            }
+            h3 {
+              margin: 1.5rem 0 1rem 0;
+            }
           }
         }
       }

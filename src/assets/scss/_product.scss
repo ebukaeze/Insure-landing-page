@@ -30,6 +30,15 @@
         padding: 2rem 0;
         margin-top: 3rem;
 
+        .bg3 {
+          display: flex;
+          background-size: auto 150px;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          right: 0;
+          transform: translate(-280px, -60px) scale(0.7);
+        }
         .extra {
           width: 80%;
           margin: 0 auto;
@@ -37,6 +46,7 @@
           justify-content: space-between;
           align-items: center;
           color: #fff;
+          z-index: 1;
 
           .plan-btn {
             display: block;

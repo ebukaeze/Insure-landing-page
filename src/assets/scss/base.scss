@@ -7,6 +7,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: $first-font;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   content: "";
   z-index: 1;
   width: 442px;
-  height: 520px;
+  height: 595px;
   position: absolute;
   background-size: cover;
   background-position: center center;
@@ -39,7 +40,7 @@ body {
   right: 0;
   margin: 0;
   background: url("../images/bg-pattern-intro-right-desktop.svg");
-  transform: scale(0.9);
+  transform: translate(60px, -50px) scale(0.7);
 
   overflow: hidden;
 }
@@ -54,7 +55,7 @@ body {
   left: 0;
   margin: 0;
   background: url("../images/bg-pattern-intro-left-desktop.svg");
-  transform: scale(0.9);
+  //transform: scale(0.9);
 
   overflow: hidden;
 }

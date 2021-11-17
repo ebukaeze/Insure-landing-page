@@ -49,13 +49,13 @@
       .img-container {
         display: flex;
         margin-left: 1rem;
-        padding-top: 2.5rem;
+        padding-top: 2.8rem;
         //position: absolute;
 
         img {
-          width: 390px;
+          width: 410px;
           height: 500px;
-          object-fit: cover;
+          object-fit: contain;
           object-position: center center;
         }
       }

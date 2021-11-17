@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -13,10 +14,10 @@ const Navbar = () => {
                 <div className="logo"><img src={require(`../assets/images/logo.svg`).default} alt="insure"/></div>
                 <div className={ `menu-items ${click && "active"}`}>
                      <ul className="nav-list">
-                         <li className="nav-items"><a href="#">How we work</a></li>
-                         <li className="nav-items"><a href="#">Blog</a></li>
-                         <li className="nav-items"><a href="#">Account</a></li>
-                         <li className="nav-items btn"><a href="#"> View Plans</a></li>
+                         <li className="nav-items"><Link to="#">How we work</Link></li>
+                         <li className="nav-items"><Link to="#">Blog</Link></li>
+                         <li className="nav-items"><Link to="#">Account</Link></li>
+                         <li className="nav-items btn"><Link to="#"> View Plans</Link></li>
                      </ul>
                     </div>
                     <div className="menu-icon" onClick={handleClick}>

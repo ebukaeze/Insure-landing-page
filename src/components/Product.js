@@ -30,6 +30,9 @@ const Product = () => {
                  </div>
 
                  <div className="product-extra">
+                     <div className="bg3">
+                         <img src={require('../assets/images/bg-pattern-how-we-work-desktop.svg').default} alt="svg"/>
+                     </div>
                      <div className="extra">
                          <h1>Find out more<br/> about how we work</h1>
                          <button className="plan-btn">How we work</button>

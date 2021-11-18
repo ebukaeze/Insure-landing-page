@@ -1,11 +1,16 @@
 .product {
   width: 100%;
   height: max-content;
+  @media screen and (max-width: 750px) {
+  }
   padding-bottom: 1rem;
   .product-container {
     .product-content {
       .title {
         margin-bottom: 1.5rem;
+        @media screen and (max-width: 750px) {
+          text-align: center;
+        }
       }
 
       .product-grid {
@@ -33,11 +38,33 @@
         .bg3 {
           display: flex;
           background-size: auto 150px;
-          width: 200px;
-          height: 200px;
+          background: url("../images/bg-pattern-how-we-work-desktop.svg")
+            no-repeat;
+          width: 280px;
+          height: 390px;
+          background-size: contain;
           position: absolute;
           right: 0;
-          transform: translate(-280px, -60px) scale(0.7);
+          transform: translate(-170px, -67px) scale(0.8);
+          @media screen and (max-width: 750px) {
+            background: url("../images/bg-pattern-how-we-work-mobile.svg")
+              no-repeat;
+            background-size: auto 250px;
+            width: 32%;
+            height: 254px;
+            //background-size: -250px -250px;
+            transform: translate(-3px, -50px) scale(0.86);
+            overflow: hidden;
+          }
+          @media screen and (max-width: 375px) {
+            background: url("../images/bg-pattern-how-we-work-mobile.svg")
+              no-repeat;
+            width: 58%;
+            height: 254px;
+            //background-size: -250px -250px;
+            transform: translate(10px, -40px) scale(0.9);
+            overflow: hidden;
+          }
         }
         .extra {
           width: 80%;
@@ -67,6 +94,56 @@
               background: $very-light-gray;
               color: $very-dark-violet;
             }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .product {
+    display: flex;
+    margin-top: 5.8rem;
+    margin-bottom: 6rem;
+    .product-container {
+      margin-top: 3rem;
+      .product-content {
+        .title {
+          color: $first-color;
+          font-size: 3rem;
+        }
+        .product-grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .product-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h3 {
+              color: $first-color;
+              font-size: 2.5rem;
+            }
+            p {
+              text-align: center;
+            }
+            .product-icon {
+              margin: 1rem 0;
+              transform: scale(1);
+            }
+          }
+        }
+        .product-extra {
+          flex-direction: column;
+
+          .extra {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
           }
         }
       }

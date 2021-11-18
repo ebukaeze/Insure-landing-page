@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -15,10 +16,10 @@ const Footer = () => {
                            </div>
                            <div className="social-container">
                                <ul className="soc">
-                                   <li className="soc-items"><img src={require('../assets/images/icon-facebook.svg').default } alt="icon"/></li>
-                                   <li className="soc-items"><img src={require('../assets/images/icon-twitter.svg').default } alt="icon"/></li>
-                                   <li className="soc-items"><img src={require('../assets/images/icon-pinterest.svg').default } alt="icon"/></li>
-                                   <li className="soc-items"><img src={require('../assets/images/icon-instagram.svg').default } alt="icon"/></li>
+                                   <li className="soc-items"><img src={require('../assets/images/icon-facebook.svg').default } alt="fb"/></li>
+                                   <li className="soc-items"><img src={require('../assets/images/icon-twitter.svg').default } alt="tw"/></li>
+                                   <li className="soc-items"><img src={require('../assets/images/icon-pinterest.svg').default } alt="pin"/></li>
+                                   <li className="soc-items"><img src={require('../assets/images/icon-instagram.svg').default } alt="ig"/></li>
 
                                </ul>
                            </div>
@@ -29,30 +30,30 @@ const Footer = () => {
                    <div className="footer-links">
                        <ul>
                            <h3>OUR COMPANY</h3>
-                           <li><a href="#">How we work</a></li>
-                           <li><a href="#">Why insure</a></li>
-                           <li><a href="#">view plans</a></li>
-                           <li><a href="#">reviews</a></li>
+                           <li><Link to="#">How we work</Link></li>
+                           <li><Link to="#">Why insure</Link></li>
+                           <li><Link to="#">view plans</Link></li>
+                           <li><Link to="#">reviews</Link></li>
                        </ul>
                        <ul>
                            <h3>Help me</h3>
-                           <li><a href="#">faq</a></li>
-                           <li><a href="#">term of use</a></li>
-                           <li><a href="#">Privacy Policies</a></li>
-                           <li><a href="#">Cookies</a></li>
+                           <li><Link to="#">faq</Link></li>
+                           <li><Link to="#">term of use</Link></li>
+                           <li><Link to="#">Privacy Policies</Link></li>
+                           <li><Link to="#">Cookies</Link></li>
                        </ul>
                        <ul>
                            <h3>Contact</h3>
-                           <li><a href="#">sales</a></li>
-                           <li><a href="#">support</a></li>
-                           <li><a href="#">live chat</a></li>
+                           <li><Link to="#">sales</Link></li>
+                           <li><Link to="#">support</Link></li>
+                           <li><Link to="#">live chat</Link></li>
                            
                        </ul>
                        <ul>
                            <h3>Others</h3>
-                           <li><a href="#">careers</a></li>
-                           <li><a href="#">press</a></li>
-                           <li><a href="#">license</a></li>
+                           <li><Link to="#">careers</Link></li>
+                           <li><Link to="#">press</Link></li>
+                           <li><Link to="#">license</Link></li>
                            
                        </ul>
                    </div>

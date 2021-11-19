@@ -4,6 +4,10 @@
 
 ## Welcome! 👋
 
+## Live Demo
+
+- Live Site URL: [live site](https://insure-lainding-page-react.netlify.app/);
+
 ![Design preview for Insure landing page coding challenge](./insure.png)
 Thanks for checking out my this projects, let's have fun.
 
@@ -34,8 +38,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://www.frontendmentor.io/solutions/react-job-listing-with-filtering-_TeWqNka8)
-- Live Site URL: [live site](https://myjob-listing-react.netlify.app/);
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-and-sass-jufyodvWQ)
+- Live Site URL: [live site](https://insure-lainding-page-react.netlify.app/);
 
 ## My process
 
